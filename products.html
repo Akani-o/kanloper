@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Kanloper Enterprises</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .navbar {
+            background: #2c3e50;
+            padding: 1rem;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background-color: #34495e;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .products-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e1e1e1;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .product-features {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        
+        .product-features li {
+            padding: 0.3rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .product-features li:before {
+            content: "✓";
+            color: #27ae60;
+            position: absolute;
+            left: 0;
+        }
+        
+        .coming-soon {
+            text-align: center;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 3rem;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Kanloper Enterprises</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Our Premium Towel Fabrics</h1>
+        <p>Quality materials sourced from around the world</p>
+    </section>
+
+    <!-- Products Content -->
+    <section class="products-section">
+        <h2>Product Catalog</h2>
+        <p>We specialize in importing various types of high-quality towel fabrics to meet diverse customer needs.</p>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>Turkish Cotton Fabrics</h3>
+                <p>Premium long-staple cotton known for its exceptional softness and absorbency.</p>
+                <ul class="product-features">
+                    <li>Superior absorbency</li>
+                    <li>Luxuriously soft</li>
+                    <li>Long-lasting durability</li>
+                    <li>Quick drying</li>
+                </ul>
+            </div>
+            
+            <div class="product-card">
+                <h3>Egyptian Cotton Varieties</h3>
+                <p>World-renowned extra-long staple cotton for premium towel manufacturing.</p>
+                <ul class="product-features">
+                    <li>Extra-long fibers</li>
+                    <li>Superior strength</li>
+                    <li>Luxurious feel</li>
+                    <li>Excellent durability</li>
+                </ul>
+            </div>
+            
+            <div class="product-card">
+                <h3>Microfiber Materials</h3>
+                <p>Advanced synthetic fabrics offering exceptional performance and value.</p>
+                <ul class="product-features">
+                    <li>Ultra-absorbent</li>
+                    <li>Lightweight</li>
+                    <li>Quick drying</li>
+                    <li>Stain resistant</li>
+                </ul>
+            </div>
+            
+            <div class="product-card">
+                <h3>Bamboo Fiber Fabrics</h3>
+                <p>Eco-friendly and naturally antibacterial bamboo-based materials.</p>
+                <ul class="product-features">
+                    <li>Natural antibacterial</li>
+                    <li>Eco-friendly</li>
+                    <li>Hypoallergenic</li>
+                    <li>Super soft texture</li>
+                </ul>
+            </div>
+            
+            <div class="product-card">
+                <h3>Terry Cloth Varieties</h3>
+                <p>Classic towel fabrics with looped pile for maximum absorbency.</p>
+                <ul class="product-features">
+                    <li>High absorbency</li>
+                    <li>Durable construction</li>
+                    <li>Various weights available</li>
+                    <li>Custom colors</li>
+                </ul>
+            </div>
+            
+            <div class="product-card">
+                <h3>Custom Blends</h3>
+                <p>Specialized fabric blends tailored to specific customer requirements.</p>
+                <ul class="product-features">
+                    <li>Custom mixtures</li>
+                    <li>Specific weights</li>
+                    <li>Special finishes</li>
+                    <li>Bulk orders</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="coming-soon">
+            <h3>Product Gallery Coming Soon!</h3>
+            <p>We're working on adding photos of our fabric samples. Contact us to request samples and see the quality for yourself.</p>
+        </div>
+        <!-- Samples Request Section -->
+        <div class="samples-section" style="margin-top: 4rem; padding: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 8px; text-align: center;">
+            <h3 style="margin-bottom: 1rem;">Request Free Fabric Samples</h3>
+            <p style="margin-bottom: 2rem; opacity: 0.9;">See and feel the quality for yourself. Request free samples of our towel fabrics.</p>
+            <a href="contact.html?subject=samples" style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: transform 0.3s;">
+            Request Samples Now
+    </a>
+</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kanloper Enterprises. All rights reserved.</p>
+        <p>Email: kanloperenterprises@gmail.com | Phone: +234 80 3401 6685</p>
+    </footer>
+</body>
+</html>

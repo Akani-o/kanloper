@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Kanloper Enterprises</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .navbar {
+            background: #2c3e50;
+            padding: 1rem;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background-color: #34495e;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .gallery-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .coming-soon {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .coming-soon h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .coming-soon a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .coming-soon a:hover {
+            text-decoration: underline;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: #f8f9fa;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ddd;
+        }
+        
+        .gallery-item .placeholder {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+        
+        .gallery-item h4 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Kanloper Enterprises</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Product Gallery</h1>
+        <p>See the quality of our premium towel fabrics</p>
+    </section>
+
+    <!-- Gallery Content -->
+    <section class="gallery-section">
+        <div class="coming-soon">
+            <h2>Gallery Coming Soon!</h2>
+            <p>We're currently compiling high-quality photos of our fabric samples.</p>
+            <p>In the meantime, please <a href="contact.html">contact us</a> to request physical samples.</p>
+        </div>
+        
+        <!-- Sample Gallery Items (hidden for now) -->
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <div class="placeholder">
+                    <h4>Turkish Cotton</h4>
+                    <p>Photo coming soon</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="placeholder">
+                    <h4>Egyptian Cotton</h4>
+                    <p>Photo coming soon</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="placeholder">
+                    <h4>Microfiber</h4>
+                    <p>Photo coming soon</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="placeholder">
+                    <h4>Bamboo Fiber</h4>
+                    <p>Photo coming soon</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="placeholder">
+                    <h4>Terry Cloth</h4>
+                    <p>Photo coming soon</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="placeholder">
+                    <h4>Custom Blends</h4>
+                    <p>Photo coming soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kanloper Enterprises. All rights reserved.</p>
+        <p>Email: kanloperenterprises@gmail.com | Phone: +234 80 3401 6685</p>
+    </footer>
+</body>
+</html>
